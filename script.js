@@ -47,7 +47,12 @@ console.log(subtotalConsumo())
 
 let subtotalConIva=() =>{
     let totalIva= subtotalConsumo() * iva();
-    let total= subtotalConsumo() + totalIva;
-    return total;
+    //let total= subtotalConsumo() + totalIva;
+    return totalIva;
 }
 console.log(subtotalConIva());
+
+let totalFactura= () =>{
+    return subtotalConsumo() +subtotalConIva ()+ cargoFijo();
+}
+console.log(totalFactura())
