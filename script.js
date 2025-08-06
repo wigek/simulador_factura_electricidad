@@ -23,3 +23,7 @@ function consumoMensual(){
     return 410;
 }
 
+function valorPorKilovatio(){
+    return 620;
+}
+
