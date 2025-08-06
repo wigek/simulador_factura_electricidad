@@ -19,11 +19,19 @@
 // El enfoque del ejercicio es comparar la forma y el comportamiento de cada tipo de función.
 // El proyecto debe estar en un repositorio de GitHub con une buena conveción de nomenclatura (Solo camlCase) y un commit por función
 
+
+//funciones declarativas
 function consumoMensual(){
     return 410;
 }
 
 function valorPorKilovatio(){
     return 620;
+}
+
+//funciones de expresión
+
+let cargoFijo= function(){
+    return 3500;
 }
 
