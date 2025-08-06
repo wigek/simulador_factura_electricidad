@@ -44,3 +44,10 @@ let subtotalConsumo= () =>{
 }
 
 console.log(subtotalConsumo())
+
+let subtotalConIva=() =>{
+    let totalIva= subtotalConsumo() * iva();
+    let total= subtotalConsumo() + totalIva;
+    return total;
+}
+console.log(subtotalConIva());
