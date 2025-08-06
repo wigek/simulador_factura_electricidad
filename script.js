@@ -38,3 +38,9 @@ let cargoFijo= function(){
 let iva = function(){
     return 0.19
 }
+
+let subtotalConsumo= () =>{
+    return consumoMensual()* valorPorKilovatio();
+}
+
+console.log(subtotalConsumo())
