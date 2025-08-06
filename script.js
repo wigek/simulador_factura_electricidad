@@ -35,3 +35,6 @@ let cargoFijo= function(){
     return 3500;
 }
 
+let iva = function(){
+    return 0.19
+}
