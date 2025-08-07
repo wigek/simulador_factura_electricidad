@@ -31,11 +31,11 @@ function valorPorKilovatio(){
 
 //funciones de expresión
 
-let cargoFijo= function(){
+const cargoFijo= function(){
     return 3500;
 }
 
-let iva = function(){
+const iva = function(){
     return 0.19
 }
 
@@ -48,9 +48,7 @@ let subtotalConsumo= () =>{
 //console.log(subtotalConsumo())
 
 let subtotalConIva=() =>{
-    let totalIva= subtotalConsumo() * iva();
-    //let total= subtotalConsumo() + totalIva;
-    return totalIva;
+    return subtotalConsumo()* iva ();
 }
 //console.log(subtotalConIva());
 
@@ -64,5 +62,5 @@ function facturaMensual(){
     console.log(`El consumo mensual fue de: ${consumoMensual()} \n El valor por kilovatio es de: ${valorPorKilovatio()} \n El subtotal es de: ${subtotalConsumo()} \n El IVA es de: ${subtotalConIva()} \n El cargo fijo mensual es de: ${cargoFijo()} \n Danto un total a pagar de:  ${totalFactura()}`);
 }
 
-console.log(facturaMensual());
+facturaMensual();
 
