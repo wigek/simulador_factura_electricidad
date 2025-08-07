@@ -39,20 +39,30 @@ let iva = function(){
     return 0.19
 }
 
+// funciones flecha
+
 let subtotalConsumo= () =>{
     return consumoMensual()* valorPorKilovatio();
 }
 
-console.log(subtotalConsumo())
+//console.log(subtotalConsumo())
 
 let subtotalConIva=() =>{
     let totalIva= subtotalConsumo() * iva();
     //let total= subtotalConsumo() + totalIva;
     return totalIva;
 }
-console.log(subtotalConIva());
+//console.log(subtotalConIva());
 
 let totalFactura= () =>{
     return subtotalConsumo() +subtotalConIva ()+ cargoFijo();
 }
-console.log(totalFactura())
+//console.log(totalFactura())
+
+//backslash alt+\ y comillas inversas alt+96 
+function facturaMensual(){
+    console.log(`El consumo mensual fue de: ${consumoMensual()} \n El valor por kilovatio es de: ${valorPorKilovatio()} \n El subtotal es de: ${subtotalConsumo()} \n El IVA es de: ${subtotalConIva()} \n El cargo fijo mensual es de: ${cargoFijo()} \n Danto un total a pagar de:  ${totalFactura()}`);
+}
+
+console.log(facturaMensual());
+
